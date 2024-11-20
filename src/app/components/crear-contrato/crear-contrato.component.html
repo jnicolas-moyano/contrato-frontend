@@ -1,0 +1,90 @@
+<div class="container mt-4">
+    <h2>Crear Contrato</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="identificador" class="form-label">Identificador</label>
+        <input
+          id="identificador"
+          [(ngModel)]="contrato.identificador"
+          name="identificador"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="valor" class="form-label">Valor</label>
+        <input
+          id="valor"
+          [(ngModel)]="contrato.valor"
+          name="valor"
+          type="number"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="nombreContratante" class="form-label">Nombre del Contratante</label>
+        <input
+          id="nombreContratante"
+          [(ngModel)]="contrato.nombreContratante"
+          name="nombreContratante"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="documentoContratante" class="form-label">Documento del Contratante</label>
+        <input
+          id="documentoContratante"
+          [(ngModel)]="contrato.documentoContratante"
+          name="documentoContratante"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="nombreContratista" class="form-label">Nombre del Contratista</label>
+        <input
+          id="nombreContratista"
+          [(ngModel)]="contrato.nombreContratista"
+          name="nombreContratista"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="documentoContratista" class="form-label">Documento del Contratista</label>
+        <input
+          id="documentoContratista"
+          [(ngModel)]="contrato.documentoContratista"
+          name="documentoContratista"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="fechaInicial" class="form-label">Fecha Inicial</label>
+        <input
+          id="fechaInicial"
+          [(ngModel)]="contrato.fechaInicial"
+          name="fechaInicial"
+          type="date"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="fechaFinal" class="form-label">Fecha Final</label>
+        <input
+          id="fechaFinal"
+          [(ngModel)]="contrato.fechaFinal"
+          name="fechaFinal"
+          type="date"
+          class="form-control"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Crear Contrato</button>
+    </form>
+  </div>
+  
